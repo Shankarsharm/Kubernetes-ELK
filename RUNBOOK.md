@@ -16,6 +16,20 @@ Ensure you have the following installed and running on your machine:
 
 ---
 
+## Helm Vector repo add and install
+
+    ```bash
+    # Install vector helm repo
+    helm repo add vector https://helm.vector.dev --force-update
+    helm repo update
+
+    # Install helm vector chart with values.yaml
+    helm upgrade --install vector vector/vector \
+    -f helm/vector-values.yaml \
+    --namespace vector \
+    --create-namespace
+    ```
+
 ## Step 1: Deploy the Infrastructure
 
 You can deploy the stack using the provided bash script or manually step-by-step.

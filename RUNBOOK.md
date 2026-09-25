@@ -29,6 +29,8 @@ Ensure you have the following installed and running on your machine:
     --namespace vector \
     --create-namespace
     ```
+> Port forward zincsearch since it is minikube "kubectl port-forward -n logging svc/zincsearch 30080:4080 --address 0.0.0.0"
+
 
 ## Step 1: Deploy the Infrastructure
 
